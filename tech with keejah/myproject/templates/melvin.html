@@ -1,0 +1,49 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block title %}
+about
+{% endblock %}
+
+{% block content %}
+<h2>HELLO I'm MELVIN MUSONDA<h2>
+    <style>
+    .resized-image {
+        width: 250px; /* Desired width */
+        height: 350px; /* Desired height */
+        object-fit: cover; /* Ensure image covers the container without distortion */
+        border-radius: 50%;
+    }
+</style>
+
+<img class="resized-image" src="{% static 'images/mel.png' %}" alt="Rounded image">
+        <br>
+        <h4>Highly motivated computer programmer,   three years of expertise in computer programming.</h4>
+        <br>
+        <h2>Skills</h2>
+        <h4>programming languages: phython, html, css, jave</h4>        
+        
+        <br>
+        <h2>interests</h2>
+        <h4> video games</h4>         
+        <h4>learning new programming languages</h4>
+
+
+
+
+<title>Round Image</title>
+    <style>
+        
+        .rounded-image {
+            border-radius: 50%;
+        }
+    </style>
+<img class="rounded-image" src="{% static 'images/me.png' %}" alt="My Image">
+
+<a href="https://www.facebook.com/omur cj">chat on facebook</a>
+<a href="https://api.whatsapp.com/send?phone=0765591918">Chat on WhatsApp</a>
+<a href="mailto:melvinmusonda54@gmail.com">Send Email</a>
+
+<p>Check out my <a href="/">home</a> page</p>
+<p>melvinmusonda54@gmail.com</p>
+{% endblock %}

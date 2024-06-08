@@ -1,0 +1,38 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block title %}
+about
+{% endblock %}
+
+{% block content %}
+<h1>TECH WITH KEEJAH</h1>
+<br>
+<p>welcom to my about page </p>
+<br>
+<p>I offer web solutions if interested please click on the links below to contect me </p>
+ <title>Round Image</title>
+    <style>
+        
+        .rounded-image {
+            border-radius: 50%;
+        }
+    </style>
+
+
+
+<img class="rounded-image" src="{% static 'images/me.png' %}" alt="My Image">
+
+<a href="https://www.facebook.com/omur cj">chat on facebook</a>
+
+<a href="https://api.whatsapp.com/send?phone=975695158">Chat on WhatsApp</a>
+
+<a href="mwandukeejah@gmail.com">Send Email</a>
+
+
+   
+    
+<p>Check out my <a href="/">home</a> page</p>
+
+<p>mwandukeejah@gmail.com</p>
+{% endblock %}
